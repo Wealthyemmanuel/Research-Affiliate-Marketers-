@@ -55,7 +55,10 @@ export default function App() {
         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.3)]">
           <img src="https://i.ibb.co/TMB5Fqq6/pz75w9.jpg" alt="Logo" className="w-full h-full object-cover" />
         </div>
-        <span className="font-bold text-yellow-500 tracking-widest uppercase text-xs">Emmanuel Ifenna</span>
+        <div className="flex flex-col">
+          <span className="font-bold text-yellow-500 tracking-widest uppercase text-xs">Emmanuel Ifenna</span>
+          <span className="text-white/70 italic text-[10px]">Naval Azure</span>
+        </div>
       </div>
 
       <div className="max-w-4xl w-full bg-slate-800/50 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden border border-white/10 relative z-10 mt-12 sm:mt-8">
@@ -78,16 +81,16 @@ export default function App() {
                
                {/* Left Column: Letter / Context */}
                <div className="md:border-r md:border-white/10 md:pr-10">
-                 <p className="text-white/70 mb-4 leading-relaxed">
-                   I need your feedback. I'm putting the finishing touches on a massive new resource called <strong className="text-white font-semibold">The Silent Salesman Pages</strong>. It contains 90+ done-for-you Elementor bridge pages that are already written, designed, and set up to help you automatically presell your affiliate offers.
+                 <p className="text-base text-white/90 mb-4 leading-relaxed">
+                   I'm putting together 90+ done-for-you bridge pages that will help Nigerian affiliate marketers convert leads into buyers on complete autopilot. Before I release it — I want to make sure it solves your exact problem. Answer one quick question below and get free early access.
                  </p>
-                 <p className="text-white/80 font-medium mb-6 leading-relaxed bg-blue-500/10 p-4 rounded-lg border border-blue-500/20">
+                 <p className="text-base text-white/80 font-medium mb-6 leading-relaxed bg-blue-500/10 p-4 rounded-lg border border-blue-500/20">
                    I want to make sure I don't leave anything out, so will you let me know: <strong className="text-yellow-500">What is the ONE thing stopping you from making consistent sales with your affiliate links right now?</strong>
                  </p>
                  
                  <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
                    <h3 className="font-bold text-white mb-4">In exchange for your feedback, you'll get:</h3>
-                   <ul className="space-y-3 text-sm text-white/80">
+                   <ul className="space-y-3 text-base text-white/80">
                      <li className="flex items-start">
                        <CheckCircle2 className="w-5 h-5 text-yellow-500 mr-3 flex-shrink-0 mt-0.5" />
                        <span><strong className="text-white">FREE Early Access</strong> to The Silent Salesman Pages (Value ₦5,000)</span>
@@ -119,7 +122,7 @@ export default function App() {
                      <HelpCircle className="w-8 h-8 text-yellow-500" />
                    </div>
                    <h3 className="text-2xl font-bold text-white tracking-tight">What's your #1 affiliate challenge?</h3>
-                   <p className="text-sm text-white/50 mt-2">Tell us below to claim your free access.</p>
+                   <p className="text-base text-white/50 mt-2">Tell us below to claim your free access.</p>
                  </div>
 
                  <form onSubmit={handleSubmit} className="space-y-6">
@@ -136,7 +139,7 @@ export default function App() {
                        required
                        value={challenge}
                        onChange={(e) => setChallenge(e.target.value)}
-                       className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 transition-colors resize-none text-white placeholder-white/30"
+                       className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-yellow-500 transition-colors resize-none text-white placeholder-white/30"
                        placeholder="Be honest. Type your answer here..."
                      />
                    </div>
@@ -152,7 +155,7 @@ export default function App() {
                        required
                        value={email}
                        onChange={(e) => setEmail(e.target.value)}
-                       className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 transition-colors text-white placeholder-white/30"
+                       className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-yellow-500 transition-colors text-white placeholder-white/30"
                        placeholder="Enter your best email address"
                      />
                    </div>
