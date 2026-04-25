@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "Lead": {
+      "title": "Lead",
+      "description": "An affiliate marketer lead who opted in for the masterclass/pages.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "Email address of the lead"
+        },
+        "challenge": {
+          "type": "string",
+          "description": "The biggest challenge the lead faces"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp of opt-in, stored as a Firestore Server Timestamp or restricted to request.time."
+        }
+      },
+      "required": ["email", "challenge", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/leads/{leadId}": {
+      "schema": {
+        "$ref": "#/entities/Lead"
+      },
+      "description": "Collection of all opt-in leads."
+    }
+  }
+}
